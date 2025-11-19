@@ -2,17 +2,17 @@
 
 WindRose provides types for Tailwind utility classes. While it was originally developed for use with [Plot](https://github.com/JohnSundell/Plot), it should be usable with any HTML DSL library.
 
-## 📱 Requirements
+## Requirements
 
 Swift 5.10 toolchain with Swift Package Manager, macOS 13.0.
 
-## 🖥 Installation
+## Installation
 
 Add the following dependency clauses to your Package.swift:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Mobelux/swift-wind-rose.git", from: "0.5.0")
+    .package(url: "https://github.com/mgacy/swift-wind-rose.git", from: "0.5.0")
 ],
 targets: [
     .target(
@@ -104,7 +104,7 @@ stacked.classname // "dark:md:hover:bg-fuchsia-600"
 ```
 
 
-## ⚙️ Usage
+## Usage
 
 WindRose is designed to be used with a one of the [many](https://github.com/BinaryBirds/swift-html) [HTML](https://github.com/tayloraswift/swift-dom) [DSLs](https://github.com/pointfreeco/swift-html) available for Swift and is not particularly useful outside of additional, library-specific support. The [Plot](https://github.com/JohnSundell/Plot) library, for example, defines a `Component` protocol that can be used as follows:
 
