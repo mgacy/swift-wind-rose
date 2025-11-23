@@ -2,8 +2,7 @@
 version: 2
 updates:
   - package-ecosystem: "swift"
-    directories:
-      - "/src/**/Package.swift"
+    directory: "/"
     schedule:
       interval: "weekly"
       day: "sunday"
