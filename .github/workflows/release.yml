@@ -28,7 +28,7 @@ jobs:
 
       - name: Get latest release version
         id: get_current_version
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const { data: { tag_name } } = await github.rest.repos.getLatestRelease({
@@ -45,7 +45,7 @@ jobs:
           version: ${{ steps.get_current_version.outputs.result }}
 
       - name: Push tag
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             github.rest.git.createRef({
@@ -56,7 +56,7 @@ jobs:
             })
 
       - name: Create release
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             github.rest.repos.createRelease({
